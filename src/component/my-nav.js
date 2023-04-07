@@ -1,10 +1,12 @@
-import { LitElement, html, css } from "lit";
+import { LitElement, html } from "lit";
 // import navbarCss from "../sass/partials/_header.scss";
 
-
 class MyNav extends LitElement {
-
+  // static get styles() {
+  //   return [navbarCss];
+  // }
   render() {
+    
     return html`
       <nav class="navbar">
         <a href="#" class="logo">Dicoding</a>
