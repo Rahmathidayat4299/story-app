@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 @use "sass:map";
+@use "../base";
 
 header .navbar {
   padding: 20px 25px;
