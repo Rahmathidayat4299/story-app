@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        // check scss files in all sass/partials folder
+        // Untuk style scss yang di import ke lit element menggunakan lit-scss-loader
         test: /\.scss$/,
         include: path.resolve(__dirname, 'src/sass/partials'),
         use: [
@@ -31,6 +31,7 @@ module.exports = {
         ]
       },
       {
+        // Untuk style scss yang global dan ter inject langsung ke html oleh style-loader
         test: /\.scss$/,
         exclude: path.resolve(__dirname, 'src/sass/partials'),
         use: [
